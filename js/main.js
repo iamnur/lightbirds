@@ -41,3 +41,30 @@ function carousel() {
   x[slideIndex - 1].style.display = "block";
   setTimeout(carousel, 3000); // Change image every 3 seconds
 }
+
+// show date
+function showDate() {
+  var time = document.getElementById("time");
+  time.innerHTML = Date();
+}
+
+//validate form frontend charctrs only not security or hack prtn that needs a backend code
+
+function validateForm() {
+  var firstname = document.forms["contact"]["firstname"].value;
+  var email = document.forms["contact"]["email"].value;
+  var subject = document.forms["contact"]["subject"].value;
+
+  if (firstname == null || firstname == "") {
+    alert("Name is required");
+    return false;
+  }
+  if (email == null || email == "") {
+    alert("Email is required");
+    return false;
+  }
+  if (subject == null || subject == "") {
+    alert("Message is required");
+    return false;
+  }
+}

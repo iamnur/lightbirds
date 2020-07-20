@@ -88,7 +88,10 @@
               fugit doloribus autem beatae dignissimos neque iure blanditiis
               alias nostrum, nisi delectus, accusamus aliquid omnis non.
             </p>
+            <h1 id="time"></h1>
+          <button onclick="showDate()">Show Date</button>
           </div>
+          
         </section>
         <hr />
         <!--CONTACT-->
@@ -100,7 +103,7 @@
               Contact
             </h2>
             <!--NETLIFY FORM-->
-            <form name="contact" method="POST" data-netlify="true">
+            <form name="contact" method="POST" data-netlify="true" onsubmit="return validateForm()">
               <div class="row">
                 <div class="col-25">
                   <label for="fname">First Name</label>
@@ -178,6 +181,7 @@
             necessitatibus excepturi? Voluptatibus aut iusto natus ab molestias
             facere ullam! A.
           </p>
+          
         </div>
         </section>
         <hr />
@@ -217,6 +221,8 @@
         </div>
         </section>
         <hr />
+
+    
         <!--BLOG-->
         <div class="polaroid">
         <h2>
